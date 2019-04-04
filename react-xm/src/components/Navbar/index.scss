@@ -1,21 +1,11 @@
 .navbar{
-    height: 100vh;
-    background: #001529;
-    ul{
-        
-    }
-    button{
-        position: absolute;
-        left:16rem;
-        top: 0.6rem;
-        background: none;
-        border: none;
-        color: #333;
-        font-size: 1.4rem
-
-    }
-    button:hover{
-        background: none;
-        color: #1890ff;
+   
+    .aside{
+        height: 100vh;
+        overflow-y: scroll;
+        ul{
+            height: 100%;
+        }
+       
     }
 }

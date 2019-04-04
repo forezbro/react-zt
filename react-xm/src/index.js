@@ -5,6 +5,7 @@ import './index.scss';
 import 'antd/dist/antd.css'
 import App from './App';
 import './rem.js'
+import "./assets/css/base_m.css"
 
 ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
 
