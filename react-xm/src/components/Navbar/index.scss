@@ -1,11 +1,8 @@
-.navbar{
-   
-    .aside{
-        height: 100vh;
-        overflow-y: scroll;
-        ul{
-            height: 100%;
-        }
-       
-    }
+.navbar {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 100vh;
+  ul{
+  height: 100%;
+  }
 }

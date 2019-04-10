@@ -1,29 +1,50 @@
 import React, { Component } from 'react';
-import {Route,Switch,Redirect,withRouter} from 'react-router-dom'
+import { Home , List} from './routes'
+import { Route, Switch, withRouter } from 'react-router-dom'
 import Navbar from './components/Navbar/index.js'
+import Topbar from './components/Topbar/index.js'
 class App extends Component {
-  rendeFooter () {
-    return <Navbar/>
-   }
+  constructor (props) {
+    super(props);
+    this.state={
+      name1: 'sdsssd',
+      collapsed:false
+    };
+  }
+  rendeNavbar() {
+     return <Navbar/>
+  }
+  rendeTopbar() {
+    return <Topbar />
+  }
   render() {
-    
-    let {routes} = this.props
+
+    let { routes } = this.props
     return (
       <div className="App">
-       <Switch>
-            {
-              routes.map(item => {
-                return <Route path={item.path} component={item.component} exact={item.exact} key={item.id}/>
-              })
-            }
-      </Switch>
-      {this.rendeFooter()}
+        <div className="box fx">
+        {/* <Navbar collapsed={this.state.collapsed}></Navbar> */}
+          {this.rendeNavbar()}
+          <div className="section">
+            {this.rendeTopbar()}
+            {/* <Topbar name1={this.state.name1} ></Topbar> */}
+            <Switch>
+              {
+                routes.map(item => {
+                  return <Route path={item.path} component={item.component} exact={item.exact} key={item.id} />
+                })
+              }
+            </Switch>
+          </div>
+        </div>
       </div>
     );
   }
 }
-App.defaultProps={
-  routes:[
+App.defaultProps = {
+  routes: [
+    { id: 1, path: '/home', component: Home },
+    { id: 2, path: '/list', component: List }
   ]
 }
 
