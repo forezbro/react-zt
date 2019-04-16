@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Table, Divider, Tag } from 'antd';
 import './index.scss'
 
 
@@ -10,7 +11,7 @@ class Home extends Component {
   render() {
  
     return (
-      <div>dsdsdsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsd</div>
+      <div></div>
     )
   }
 

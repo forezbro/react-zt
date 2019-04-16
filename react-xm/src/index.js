@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom'
 import './index.scss';
+import PropTypes from 'prop-types'
 import 'antd/dist/antd.css'
 import App from './App';
 import './rem.js'

@@ -27,7 +27,7 @@ class Navbar extends Component {
           defaultOpenKeys={["sub1"]}
           mode="inline"
           theme="dark"
-          inlineCollapsed={this.props.collapsed}
+          inlineCollapsed={this.state.collapsed}
         >
           <Menu.Item key="1" onClick={this.option1}>
             <Icon type="pie-chart" />
